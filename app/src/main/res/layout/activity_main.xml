@@ -28,9 +28,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="680dp"
         android:orientation="vertical"
-        android:gravity="bottom">
+        android:gravity="bottom"
+        tools:ignore="MissingConstraints">
 
         <EditText
             android:layout_width="match_parent"
@@ -57,6 +58,7 @@
                 android:backgroundTint="@android:color/transparent"
                 android:hint="Password"
                 android:padding="15dp"
+                android:inputType="textPassword"
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:textColorHint="#797979"
