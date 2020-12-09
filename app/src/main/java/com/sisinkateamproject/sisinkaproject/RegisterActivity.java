@@ -2,8 +2,10 @@ package com.sisinkateamproject.sisinkaproject;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
 import android.view.WindowManager;
 
 public class RegisterActivity extends AppCompatActivity {
@@ -15,5 +17,9 @@ public class RegisterActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
         setContentView(R.layout.activity_register);
+    }
+
+    public void OpenSignupPage(View view) {
+        startActivity(new Intent(MainActivity.this,RegisterActivity.class));
     }
 }

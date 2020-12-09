@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    public void OpenignupPage(View view) {
+    public void OpenSignupPage(View view) {
         startActivity(new Intent(MainActivity.this,RegisterActivity.class));
     }
 }
