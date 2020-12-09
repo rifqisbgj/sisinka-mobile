@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 
-public class RegisterActivity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +16,10 @@ public class RegisterActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
         getWindow().setStatusBarColor(Color.TRANSPARENT);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_login);
     }
 
-    public void OpenSignInPage(View view) {
-        startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+    public void OpenignupPage(View view) {
+        startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
     }
 }
