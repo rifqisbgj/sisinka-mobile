@@ -31,6 +31,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:autofillHints="autoFillSearchET"
+        android:drawableStart="@drawable/ic_baseline_location_on_24"
         android:hint="Cari Lokasi"
         android:inputType="text"
         android:padding="15dp" />
@@ -42,6 +43,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:autofillHints="autoFillSearchET"
+        android:drawableStart="@drawable/ic_baseline_search_24"
         android:hint="Cari Kajian"
         android:inputType="text"
         android:padding="15dp" />
@@ -459,14 +461,20 @@
                 </androidx.cardview.widget.CardView>
 
             </LinearLayout>
-
-            <ImageView
-                android:layout_marginTop="30dp"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sisinka"/>
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvWisata"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    tools:listitem="@layout/item_kajian"
+                    android:scrollbars="vertical" />
+
+            </RelativeLayout>
 
         </LinearLayout>
     </ScrollView>

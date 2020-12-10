@@ -9,13 +9,13 @@
     app:cardElevation="3dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="160dp"
+        android:layout_height="29dp"
         android:layout_gravity="start"
         android:layout_marginStart="-10dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/ic_categories"
-        android:backgroundTint="#000000"
+        android:backgroundTint="#A9D043"
         android:elevation="5dp"
         android:orientation="horizontal">
 
@@ -23,14 +23,15 @@
             android:id="@+id/tvKategori"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_marginEnd="5dp"
             android:layout_marginBottom="2dp"
             android:padding="5dp"
+            android:text="20 Desember 2020"
             android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
-            android:textColor="@android:color/white"
-            android:textSize="12sp"
-            android:text="20 Desember 2020"/>
+            android:textColor="#383E46"
+            android:textStyle="bold"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -42,9 +43,14 @@
             android:id="@+id/imgWisata"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="-1dp"
             android:adjustViewBounds="true"
             android:cropToPadding="true"
-            android:scaleType="centerCrop" />
+            android:scaleType="centerCrop"
+            android:src="@drawable/sisinka" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -62,6 +68,7 @@
                 android:textAppearance="@style/Base.TextAppearance.AppCompat.Small"
                 android:textColor="@android:color/white"
                 android:textSize="14sp"
+                android:text="Islammophobia"
                 android:textStyle="bold" />
 
         </LinearLayout>
